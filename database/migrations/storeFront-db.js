@@ -15,7 +15,7 @@ exports.setup = function(options) {
 };
 
 exports.up = function(db, callback) {
-  var filePath = path.join(__dirname + '/sqls/storeFront-db-up.sql');
+  var filePath = path.join(__dirname + './sqls/storeFront-db-up.sql');
   fs.readFile(filePath, {encoding: 'utf-8'}, function(err,data){
     if (err) return console.log(err);
     db.runSql(data, function(err) {
@@ -26,7 +26,7 @@ exports.up = function(db, callback) {
 };
 
 exports.down = function(db, callback) {
-  var filePath = path.join(__dirname + '/sqls/storeFront-db-down.sql');
+  var filePath = path.join(__dirname + './sqls/storeFront-db-down.sql');
   fs.readFile(filePath, {encoding: 'utf-8'}, function(err,data){
     if (err) return console.log(err);
     db.runSql(data, function(err) {
