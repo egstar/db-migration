@@ -1,0 +1,30 @@
+{
+  "dev": {
+    "driver": "sqlite3",
+    "filename": "~/dev.db"
+  },
+
+  "test": {
+    "driver": "sqlite3",
+    "filename": ":memory:"
+  },
+
+  "prod": {
+    "driver": "pg",
+    "user": "postgres",
+    "password": "postgres"
+  },
+
+  "pg": {
+    "driver": "pg",
+    "user": "postgres",
+    "password": "postgrest",
+    "host": "localhost",
+    "database": "storeFront",
+    "port": "5432",
+    "ssl": "true"
+  },
+
+
+  "other": "postgres://postgres:postgres@localhost/storeFront"
+}
