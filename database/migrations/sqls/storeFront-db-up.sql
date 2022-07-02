@@ -36,7 +36,3 @@ CREATE TABLE IF NOT EXISTS order_stats (
   FOREIGN KEY (orderId) REFERENCES orders (id),
   FOREIGN KEY (prodId) REFERENCES products (id)
   );
-
-INSERT INTO users (ulevel,uname,fname,lname,passwd,ustats) VALUES ('admin','admin','my','admin','abc123','active');
-INSERT INTO users (ulevel,uname,fname,lname,passwd,ustats) VALUES ('user','user1','first','user','abc123','active');
-INSERT INTO users (ulevel,uname,fname,lname,passwd,ustats) VALUES ('user','user2','second','user','abc123','active');
